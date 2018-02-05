@@ -49,6 +49,8 @@ import {
   MatTooltipModule,
 } from '@angular/material';
 import {AppComponent} from './app.component';
+import {EntryApp,Home,MenuComponent} from './menu/menu.component';
+/*import {DemoModule} from './menu/demo-module';*/
 
 /**
  * NgModule that includes all Material modules that are required to serve the app.
@@ -113,7 +115,10 @@ export class MaterialModule {}
     ReactiveFormsModule,
     BrowserAnimationsModule
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent
+      ,EntryApp,Home,MenuComponent,
+      /*DemoModule*/
+  ],
   bootstrap: [AppComponent],
   providers: []
 })

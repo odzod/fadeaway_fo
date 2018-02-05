@@ -1,12 +1,19 @@
 import {Component} from '@angular/core';
-import {VERSION} from '@angular/material';
+import { OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'material-app',
   templateUrl: 'app.component.html'
 })
-export class AppComponent { 
-  version = VERSION;
+export class AppComponent implements OnInit {
+
+    ngOnInit() {
+
+    }
+
+    version = "1.0.0 ";
+
 }
 
 /**

@@ -1,0 +1,46 @@
+body {
+    background-color: #efefef;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+#loading {
+
+    text-align:center;
+    display: block;
+    margin:0px;
+    /*background-image: url("./assets/images/logo_fadeaway_01.png");*/
+    width:300px;
+    /*margin-top:200px;*/
+    position:absolute;
+    left: 50%;
+    top: 30%;
+    margin-left: -150px;
+    background-color: #efefef;
+
+}
+
+
+#navbar {
+    overflow: hidden;
+    float:left;
+}
+
+.logotoolbar{
+    width:250px;
+}
+
+.content {
+    display:block;
+    float:left;
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.sticky + .content {
+    padding-top: 70px;
+}
