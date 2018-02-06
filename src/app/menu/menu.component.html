@@ -1,25 +1,101 @@
 <mat-sidenav-container fullscreen>
     <mat-sidenav #start>
-        <mat-nav-list>
-            #fadeaway
-        </mat-nav-list>
-        <br/>
-        <button mat-button tabindex="-1" (click)="start.close()">Fermer</button>
+        <button mat-button tabindex="-1" (click)="start.close()" style="text-align:center;">
+            <img src="./assets/images/logo_fadeaway_01.png" style="width:120px;"/>
+            <!--mat-icon>close</mat-icon-->
+        </button>
+        <hr/>
+        <button mat-button tabindex="-1" (click)="start.close()" style="text-align:right;">
+            <strong>INFOS</strong> <mat-icon style="font-size: 22px;">drag_handle</mat-icon>
+        </button>
+        <button mat-button tabindex="-1" (click)="start.close()" style="text-align:right;">
+            DOSSIERS <mat-icon style="font-size: 22px;">drag_handle</mat-icon>
+        </button>
+        <button mat-button tabindex="-1" (click)="start.close()" style="text-align:right;">
+            TEMPS MORTS <mat-icon style="font-size: 22px;">drag_handle</mat-icon>
+        </button>
+        <button mat-button tabindex="-1" (click)="start.close()" style="text-align:right;">
+            TOP CLUTCH <mat-icon style="font-size: 22px;">drag_handle</mat-icon>
+        </button>
+        <button mat-button tabindex="-1" (click)="start.close()" style="text-align:right;">
+            VIDEOS <mat-icon style="font-size: 22px;">drag_handle</mat-icon>
+        </button>
+        <button mat-button tabindex="-1" (click)="start.close()" style="text-align:right;">
+            CONTACTS <mat-icon style="font-size: 22px;">drag_handle</mat-icon>
+        </button>
+        <hr/>
+        <button mat-button tabindex="-1" (click)="start.close()">
+            <mat-icon style="font-size: 22px;">person</mat-icon> <strong>Connexion</strong>
+        </button>
+        <hr/>
+        <button mat-button tabindex="-1" (click)="start.close()">
+            <img src="./assets/images/facebook_bw.png" style="width:22px;" /> <strong>#fadeaway</strong>
+        </button>
     </mat-sidenav>
     <div>
-        <mat-toolbar style="height:80px; background: #efefef;">
+        <mat-toolbar role="header" class="fixed-header"style="height:80px; background: #efefef;">
             <button mat-icon-button (click)="start.open('mouse')">
                 <mat-icon>menu</mat-icon>
             </button>
-            <div class="demo-toolbar">
+            <div class="app-toolbar">
                 <img src="./assets/images/logo_fadeaway_01.png" class="logotoolbar"/>
                 <div>
-
+                    <img src="./assets/images/facebook_color.png" style="width:24px;" />
                 </div>
             </div>
         </mat-toolbar>
-        <div #root="dir" dir="ltr" class="demo-content">
+        <div #root="dir" dir="ltr" class="app-content">
             Patience ! Nous serons là d'ici quelques semaine.
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+            <br/>test
+
+
         </div>
     </div>
 </mat-sidenav-container>

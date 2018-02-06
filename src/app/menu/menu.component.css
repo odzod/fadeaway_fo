@@ -4,12 +4,22 @@ body {
 
 }
 
+.fixed-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%  !important;
+}
+
 .mat-sidenav {
     min-width: 15vw;
-    width: 310px;
+    width: 250px;
     position: relative;
+    padding-top:10px;
     bottom: 0;
     margin: 24px 0;
+    background-color: #efefef;
 }
 
 .mat-button {
@@ -20,8 +30,9 @@ body {
 }
 
 
-.demo-content {
+.app-content {
     padding: 32px;
+    margin-top:70px;
     box-sizing: border-box;
 }
 
@@ -32,7 +43,7 @@ body {
     cursor: pointer;
 }
 
-.demo-toolbar {
+.app-toolbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
