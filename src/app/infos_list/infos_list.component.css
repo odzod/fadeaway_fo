@@ -1,0 +1,20 @@
+.infos_img {
+    /*background-color: #ffff00;*/
+    float: left;
+    height:66px;
+    width: 100px;
+    margin: 0;
+}
+.infos_separator{
+    width:10px;
+    float:left;
+    height:66px;
+}
+.infos_text {
+    /*background-color: #00ff00;*/
+    height:66px;
+    margin:5px;
+}
+.img_infos_list{
+    width:100px;
+}

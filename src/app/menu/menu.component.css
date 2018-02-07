@@ -1,7 +1,5 @@
 body {
     font-family: Roboto, 'Helvetica Neue', sans-serif;
-
-
 }
 
 .fixed-header{
@@ -29,11 +27,13 @@ body {
     margin: 24px 0;
 }
 
-
+git
 .app-content {
-    padding: 32px;
+    padding: 16px;
     margin-top:70px;
     box-sizing: border-box;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .mat-toolbar {

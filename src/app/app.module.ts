@@ -50,6 +50,7 @@ import {
 } from '@angular/material';
 import {AppComponent} from './app.component';
 import {EntryApp,MenuComponent} from './menu/menu.component';
+import {InfosListComponent} from "./infos_list/infos_list.component";
 
 /**
  * NgModule that includes all Material modules that are required to serve the app.
@@ -116,6 +117,7 @@ export class MaterialModule {}
   ],
   declarations: [AppComponent
       ,EntryApp,MenuComponent,
+      InfosListComponent,
   ],
   bootstrap: [AppComponent],
   providers: []
