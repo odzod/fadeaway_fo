@@ -33,6 +33,8 @@ body {
     box-sizing: border-box;
     font-size: 12px;
     font-weight: bold;
+    text-align: center;
+    width: 100%;
 }
 
 .mat-toolbar {
