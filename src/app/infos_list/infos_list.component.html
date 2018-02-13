@@ -1,5 +1,5 @@
-<script src="../menu/menu.component.ts"></script>
 <div class="mob_list_infos">
+    <hr/>
     <div class="mob_infos_img"> <img src="../../assets/images/patience.jpg" class="mob_img_infos_list"/></div>
     <div class="mob_infos_separator"></div>
     <div class="mob_infos_text">
@@ -11,6 +11,7 @@
         </div>
     </div>
     <hr/>
+    <a routerLink="news/5" style="text-decoration:none; font-color:#000000; color:#000000;">
     <div class="mob_infos_img"><img src="../../assets/images/news_5.jpg" class="mob_img_infos_list"/></div>
     <div class="mob_infos_separator"></div>
     <div class="mob_infos_text">
@@ -21,6 +22,7 @@
             La rumeur du jour : IT 's possible !
         </div>
     </div>
+    </a>
     <hr/>
     <div class="mob_infos_img"><img src="../../assets/images/news_4.jpg" class="mob_img_infos_list"/></div>
     <div class="mob_infos_separator"></div>
@@ -77,9 +79,7 @@
         <div style="font-size:14px;padding-top:5px;">
             <strong>Patience ! Le site sera bientot disponible !</strong>
         </div>
-        <div style="font-size:13px;;padding-top:5px;">
-            Nous arrivons dans quelques semaine, en attendant,<br/> rejoignez-nous sur
-            <a href="https://www.facebook.com/fadeaway0840" style="text-decoration:none;font-color:black;"><u>Facebook</u></a>
+        <div style="font-size:13px;;padding-top:5px;" [innerHtml]="infos_test">
         </div>
     </div>
     <hr/>

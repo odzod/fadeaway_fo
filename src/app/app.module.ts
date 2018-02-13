@@ -51,6 +51,8 @@ import {
 import {AppComponent} from './app.component';
 import {EntryApp,MenuComponent} from './menu/menu.component';
 import {InfosListComponent} from "./infos_list/infos_list.component";
+import {InfosComponent} from "./infos/infos.component";
+import {AppRoutingModule} from "./routes";
 
 /**
  * NgModule that includes all Material modules that are required to serve the app.
@@ -113,16 +115,22 @@ export class MaterialModule {}
     MaterialModule,
     FormsModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule,
   ],
   declarations: [AppComponent
       ,EntryApp,MenuComponent,
       InfosListComponent,
+      InfosComponent,
   ],
   bootstrap: [AppComponent],
   providers: []
 })
 export class AppModule {}
+
+
+
+
 
 /**
  * Copyright Google LLC All Rights Reserved.

@@ -1,6 +1,7 @@
 
-import {Component, ViewEncapsulation} from '@angular/core';
-
+import {Component, ViewEncapsulation, OnInit} from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
     moduleId: module.id,
@@ -11,8 +12,15 @@ import {Component, ViewEncapsulation} from '@angular/core';
     preserveWhitespaces: false,
 })
 
-export class InfosListComponent {
+export class InfosListComponent implements OnInit{
 
-    constructor() {}
+    constructor(private route: ActivatedRoute,private router: Router) {
+        this.route.params.subscribe(res => console.log(res.id));
+    }
+
+    ngOnInit() {
+    }
+
+    infos_test = 'total 5 <br/>test';
 
 }
