@@ -1,16 +1,4 @@
 <div class="mob_list_infos">
-    <hr/>
-    <div class="mob_infos_img"> <img src="../../assets/images/patience.jpg" class="mob_img_infos_list"/></div>
-    <div class="mob_infos_separator"></div>
-    <div class="mob_infos_text">
-        <div style="font-size:10px;padding-top:3px;">
-            INFOS
-        </div>
-        <div style="font-size:12px;padding-top:3px;">
-            Patience ! Le site sera disponible d'ici quelques semaines !
-        </div>
-    </div>
-    <hr/>
     <a routerLink="news/5" style="text-decoration:none; font-color:#000000; color:#000000;">
     <div class="mob_infos_img"><img src="../../assets/images/news_5.jpg" class="mob_img_infos_list"/></div>
     <div class="mob_infos_separator"></div>
@@ -24,147 +12,27 @@
     </div>
     </a>
     <hr/>
-    <div class="mob_infos_img"><img src="../../assets/images/news_4.jpg" class="mob_img_infos_list"/></div>
-    <div class="mob_infos_separator"></div>
-    <div class="mob_infos_text">
-        <div style="font-size:10px;padding-top:3px;">
-            TOP CLUTCH
-        </div>
-        <div style="font-size:12px;padding-top:3px;">
-            Le facteur X du jour : Patty Mils !
-        </div>
-    </div>
-    <hr/>
-    <div class="mob_infos_img"><img src="../../assets/images/news_3.jpg" class="mob_img_infos_list"/></div>
-    <div class="mob_infos_separator"></div>
-    <div class="mob_infos_text">
-        <div style="font-size:10px;padding-top:3px;">
-            INFOS
-        </div>
-        <div style="font-size:12px;padding-top:3px;">
-            Le dossier du jour : Les Raptors de Toronto !
-        </div>
-    </div>
-    <hr/>
-    <div class="mob_infos_img"><img src="../../assets/images/news_2.jpg" class="mob_img_infos_list"/></div>
-    <div class="mob_infos_separator"></div>
-    <div class="mob_infos_text">
-        <div style="font-size:10px;padding-top:3px;">
-            INFOS
-        </div>
-        <div style="font-size:12px;padding-top:3px;">
-            La (mausaise) nouvelle du jour : La blessure de Porzingis.
-        </div>
-    </div>
-    <hr/>
-    <div class="mob_infos_img"><img src="../../assets/images/news_1.jpg" class="mob_img_infos_list"/></div>
-    <div class="mob_infos_separator"></div>
-    <div class="mob_infos_text">
-        <div style="font-size:10px;padding-top:3px;">
-            DOSSIERS
-        </div>
-        <div style="font-size:12px;padding-top:3px;">
-            Le dossier du jour : Les Pistons de Detroit !
-        </div>
-
-    </div>
 </div>
 <div class="list_infos">
-    <div class="infos_img"> <img src="../../assets/images/patience.jpg" class="img_infos_list"/></div>
-    <div class="infos_separator"></div>
-    <div class="infos_text">
-        <div style="font-size:12px;padding-top:3px;">
-            INFOS FADEAWAY
+    <div style="float:left;width:65%;text-align:left;padding-right:30px;">
+        <a routerLink="news/5" style="text-decoration:none; font-color:#000000; color:#000000;">
+        <div class="infos_img">
+            <img src="../../assets/images/news_5.jpg" class="img_infos_list"/>
         </div>
-        <div style="font-size:14px;padding-top:5px;">
-            <strong>Patience ! Le site sera bientot disponible !</strong>
+        <div class="infos_separator"></div>
+        <div class="infos_text">
+            <div style="font-size:12px;padding-top:3px;">
+                INFOS
+            </div>
+            <div style="font-size:14px;padding-top:5px;">
+                <strong>La rumeur du jour : IT 's possible !</strong>
+            </div>
+            <div style="font-size:13px;;padding-top:5px;" [innerHtml]="infos_test">
+            </div>
         </div>
-        <div style="font-size:13px;;padding-top:5px;" [innerHtml]="infos_test">
-        </div>
+        <hr/>
+        </a>
     </div>
-    <hr/>
-
-    <div class="infos_img">
-        <img src="../../assets/images/news_5.jpg" class="img_infos_list"/>
-    </div>
-    <div class="infos_separator"></div>
-    <div class="infos_text">
-        <div style="font-size:12px;padding-top:3px;">
-            INFOS
-        </div>
-        <div style="font-size:14px;padding-top:5px;">
-            <strong>La rumeur du jour : IT 's possible !</strong>
-        </div>
-        <div style="font-size:13px;;padding-top:5px;">
-            Voici la question et rumeur du jour ! Isaiah Thomas serait-il transférable avant la Trade deadline ? ...
-        </div>
-    </div>
-    <hr/>
-
-    <div class="infos_img">
-        <img src="../../assets/images/news_4.jpg" class="img_infos_list"/>
-    </div>
-    <div class="infos_separator"></div>
-    <div class="infos_text">
-        <div style="font-size:12px;padding-top:3px;">
-            TOP CLUTCH
-        </div>
-        <div style="font-size:14px;padding-top:5px;">
-            <strong>Le facteur X du jour : Patty Mils !</strong>
-        </div>
-        <div style="font-size:13px;;padding-top:5px;">
-
-        </div>
-    </div>
-    <hr/>
-
-    <div class="infos_img">
-        <img src="../../assets/images/news_3.jpg" class="img_infos_list"/>
-    </div>
-    <div class="infos_separator"></div>
-    <div class="infos_text">
-        <div style="font-size:12px;padding-top:3px;">
-            DOSSIERS
-        </div>
-        <div style="font-size:14px;padding-top:5px;">
-            <strong>Le dossier du jour : Les Raptors de Toronto !</strong>
-        </div>
-        <div style="font-size:13px;;padding-top:5px;">
-
-        </div>
-    </div>
-    <hr/>
-
-    <div class="infos_img">
-        <img src="../../assets/images/news_2.jpg" class="img_infos_list"/>
-    </div>
-    <div class="infos_separator"></div>
-    <div class="infos_text">
-        <div style="font-size:12px;padding-top:3px;">
-            INFOS
-        </div>
-        <div style="font-size:14px;padding-top:5px;">
-            <strong>La (mausaise) nouvelle du jour : La blessure de Porzingis.</strong>
-        </div>
-        <div style="font-size:13px;;padding-top:5px;">
-
-        </div>
-    </div>
-    <hr/>
-
-    <div class="infos_img">
-        <img src="../../assets/images/news_1.jpg" class="img_infos_list"/>
-    </div>
-    <div class="infos_separator"></div>
-    <div class="infos_text">
-        <div style="font-size:12px;padding-top:3px;">
-            DOSSIERS
-        </div>
-        <div style="font-size:14px;padding-top:5px;">
-            <strong>Le dossier du jour : Les Pistons de Detroit !</strong>
-        </div>
-        <div style="font-size:13px;;padding-top:5px;">
-
-        </div>
-    </div>
+    <div style="float:left;width:1px;min-height:80vh;background-color: #333333;"></div>
+    <div style="float:right;width:30%;">TEST</div>
 </div>

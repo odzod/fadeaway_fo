@@ -64,8 +64,10 @@
     .list_infos{
         display:block;
         /*text-align:center;*/
+        padding-top:20px;
+        padding-bottom:20px;
         margin-left: auto;
         margin-right: auto;
-        width:600px;
+        width:1000px;
     }
 }

@@ -7,7 +7,9 @@
  */
 
 import {OverlayContainer} from '@angular/cdk/overlay';
-import {Component, ElementRef, ViewEncapsulation} from '@angular/core';
+import {Component, ElementRef, ViewEncapsulation,OnInit} from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
 /**
  * The entry app for demo site. Routes under `accessibility` will use AccessibilityDemo component,
@@ -22,7 +24,14 @@ import {Component, ElementRef, ViewEncapsulation} from '@angular/core';
     encapsulation: ViewEncapsulation.None,
     preserveWhitespaces: false,
 })
-export class EntryApp {
+export class EntryApp implements OnInit{
+
+    constructor(private route: ActivatedRoute,private router: Router) {
+        this.route.params.subscribe(res => console.log(res.id));
+    }
+
+    ngOnInit() {
+    }
 
 }
 

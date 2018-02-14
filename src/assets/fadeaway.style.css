@@ -1,6 +1,6 @@
 body {
     background-color: #efefef;
-    font-family: Roboto, Arial, sans-serif;
+    font-family: 'Droid Sans',Arial,Verdana,sans-serif;
 }
 
 #loading {
@@ -20,6 +20,8 @@ body {
 }
 
 
+
+
 #navbar {
     overflow: hidden;
     float:left;
@@ -27,6 +29,7 @@ body {
 
 .logotoolbar{
     width:250px;
+    padding-top: 10px;
 }
 
 .content {

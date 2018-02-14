@@ -21,6 +21,6 @@ export class InfosListComponent implements OnInit{
     ngOnInit() {
     }
 
-    infos_test = 'total 5 <br/>test';
+    infos_test = 'Voici la question et rumeur du jour ! Isaiah Thomas serait-il transférable avant la Trade deadline ? ...';
 
 }
