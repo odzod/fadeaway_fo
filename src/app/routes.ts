@@ -4,7 +4,7 @@ import { InfosComponent} from "./infos/infos.component";
 import { InfosListComponent} from "./infos_list/infos_list.component";
 
 const routes: Routes = [
-    { path: '', component: InfosListComponent },
+    { path: '',  component:InfosListComponent },
     { path: 'news', component: InfosListComponent },
     { path: 'news/:id', component: InfosComponent }
 ];

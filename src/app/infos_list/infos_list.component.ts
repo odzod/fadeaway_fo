@@ -29,9 +29,7 @@ export class InfosListComponent implements OnInit{
             ,"img":"http://www.fadeaway.fr/assets/images/news_5.jpg"
             ,"date":"xx/xx/xxxx"
             ,"by":"XXXXXX X."
-            ,"contains":'Voici la question et rumeur du jour ! Isaiah Thomas serait-il transférable avant la Trade deadline ?<br/>'+
-            '<br/>'+
-            'Malgré la victoire à l\'arraché de cette nuit contre Minnesota, les Cavaliers sont toujours...'
+            ,"contains":'Voici la question et rumeur du jour ! Isaiah Thomas serait-il transférable avant la Trade deadline ?'
         }
         ,{
             "id":4

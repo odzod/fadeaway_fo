@@ -21,11 +21,11 @@
                     <div class="slider">
                         <ul class="items">
                             <li *ngFor="let news of list_of_news; let i = index;">
-                                <img src="{{news.img}}" style="width:530px;" alt="">
+                                <img src="{{news.img}}" style="width:530px; margin-left:10px;" alt="">
                                 <div class="banner">
                                     <p class="font-1">{{news.type}}</p>
                                     <p class="font-2">{{news.title}}</p>
-                                    <p class="font-3">{{news.contains}}</p>
+                                    <p class="font-3" style="text-align:justify;" [innerHtml]="news.contains"></p>
                                     <a routerLink="news/{{news.id}}">Lire la suite...</a>
                                 </div>
                             </li>
@@ -41,27 +41,42 @@
         </section>
         <br/>
     </div>
-    <div style="display:block;padding-top:15px;">
-        <div style="float:left;width:60%;text-align:left;padding-right:30px;">
-            <a routerLink="news/5" style="text-decoration:none; font-color:#000000; color:#000000;">
-                <div class="infos_img">
-                    <img src="../../assets/images/news_5.jpg" class="img_infos_list"/>
+    <div style="display:block;">&nbsp;<br/>
+        <div style="margin-left:50px;margin-right:50px;background-color: white; min-height:100vh;border:1px solid black;">
+            <div style="float:left; width:3%; background-color: white; min-height:inherit;">
+                &nbsp;
+            </div>
+            <div style="float:left;width:57%;text-align:left;background-color: white;min-height:inherit; ">
+                <div *ngFor="let news of list_of_news; let i = index;">
+                    <a routerLink="news/{{news.id}}" style="text-decoration:none; font-color:#000000; color:#000000;">
+                        <div class="infos_img">
+                            <img src="{{news.img}}" class="img_infos_list"/>
+                        </div>
+                        <div class="infos_separator"></div>
+                        <div class="infos_text">
+                            <div style="font-size:12px;padding-top:3px;color:#fb8c28;font-weight: bold;">
+                                {{news.type}}
+                            </div>
+                            <div style="font-size:14px;padding-top:5px;">
+                                <strong>{{news.title}}</strong>
+                            </div>
+                            <div style="font-size:13px;;padding-top:5px;" [innerHtml]="news.contains">
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="infos_separator"></div>
-                <div class="infos_text">
-                    <div style="font-size:12px;padding-top:3px;">
-                        INFOS
-                    </div>
-                    <div style="font-size:14px;padding-top:5px;">
-                        <strong>La rumeur du jour : IT 's possible !</strong>
-                    </div>
-                    <div style="font-size:13px;;padding-top:5px;" [innerHtml]="infos_test">
-                    </div>
+            </div>
+            <div style="float:left;width:1px;min-height:80vh;background-color: #333333;"></div>
+            <div style="float:left;width:30%; padding:20px;height:100%;min-height:inherit;text-align:left;">
+                <div>
+                    <span style="color:#fb8c28"><strong><u>DERNIERS RESULTATS</u></strong></span>
                 </div>
-                <hr/>
-            </a>
+                <br/>&nbsp;<br/>
+                <div>
+                    <span style="color:#fb8c28"><strong><u>PROCHAINS MATCHS</u></strong></span>
+                </div>
+            </div>
         </div>
-        <div style="float:left;width:1px;min-height:80vh;background-color: #333333;"></div>
-        <div style="float:right;width:30%;">TEST</div>
-        </div>
+        &nbsp;
+        <br/>&nbsp;<br/>
     </div>
