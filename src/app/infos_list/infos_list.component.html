@@ -13,42 +13,23 @@
     </a>
     <hr/>
 </div>
+
 <div class="list_infos">
-    <div style="float:left;width:100%;text-align:left;padding-right:30px;">
-        <section id="content">
-            <div class="container_12">
-                <div class="grid_12">
-                    <div class="slider">
-                        <ul class="items">
-                            <li *ngFor="let news of list_of_news; let i = index;">
-                                <img src="{{news.img}}" style="width:530px; margin-left:10px;" alt="">
-                                <div class="banner">
-                                    <p class="font-1">{{news.type}}</p>
-                                    <p class="font-2">{{news.title}}</p>
-                                    <p class="font-3" style="text-align:justify;" [innerHtml]="news.contains"></p>
-                                    <a routerLink="news/{{news.id}}">Lire la suite...</a>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="pagination">
-                            <ul>
-                                <li *ngFor="let news of list_of_news; let i = index;"><a href="#"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <br/>
+    <div style="float:left;width:100%;text-align:center;padding-right:30px;">
+    <cmp-carousel></cmp-carousel>
     </div>
     <div style="display:block;">&nbsp;<br/>
-        <div style="margin-left:50px;margin-right:50px;background-color: white; min-height:100vh;border:1px solid black;">
-            <div style="float:left; width:3%; background-color: white; min-height:inherit;">
-                &nbsp;
-            </div>
-            <div style="float:left;width:57%;text-align:left;background-color: white;min-height:inherit; ">
+        <div style="background-color: white; min-height:inherit;">
+            <div style="float:left;width:60%;text-align:left;background-color: white;min-height:inherit; ">
+                <div style="padding-top:20px;padding-left:20px;">
+                    <span style="color:#fb8c28;font-weight:bold;"><strong>NOS DERNIERES</strong></span>
+                    <span style="color:#111111;font-weight:bold;"><strong> INFOS & DOSSIERS</strong></span>
+                    <br/>
+                    <img src="./assets/images/news_space.png" style="width:220px;height:3px;margin-bottom:10px;"/>
+                </div>
                 <div *ngFor="let news of list_of_news; let i = index;">
                     <a routerLink="news/{{news.id}}" style="text-decoration:none; font-color:#000000; color:#000000;">
+                        <div style="float:left; width:20px;height:130px;"></div>
                         <div class="infos_img">
                             <img src="{{news.img}}" class="img_infos_list"/>
                         </div>
@@ -63,20 +44,28 @@
                             <div style="font-size:13px;;padding-top:5px;" [innerHtml]="news.contains">
                             </div>
                         </div>
+                        <!--div style="float:left; width:10px;height:120px;"></div-->
                     </a>
                 </div>
             </div>
-            <div style="float:left;width:1px;min-height:80vh;background-color: #333333;"></div>
-            <div style="float:left;width:30%; padding:20px;height:100%;min-height:inherit;text-align:left;">
+            <div style="float:left;width:25px;"> &nbsp; </div>
+            <div style="float:left;width:345px; padding:20px;height:100%;min-height:inherit;text-align:left; background-color:white;">
                 <div>
-                    <span style="color:#fb8c28"><strong><u>DERNIERS RESULTATS</u></strong></span>
+                    <span style="color:#fb8c28;font-weight:bold;"><strong>LAST 5</strong></span>
+                    <span style="color:#111111;font-weight:bold;"><strong> CLUTCH</strong></span>
+                        <br/>
+                    <img src="./assets/images/news_space.png" style="width:102px;height:3px;margin-bottom:10px;"/>
                 </div>
                 <br/>&nbsp;<br/>
                 <div>
-                    <span style="color:#fb8c28"><strong><u>PROCHAINS MATCHS</u></strong></span>
+                    <span style="color:#fb8c28;font-weight:bold;"><strong>NEXT</strong></span>
+                    <span style="color:#111111;font-weight:bold;"><strong>  DIFFUSIONS</strong></span>
+                    <br/>
+                    <img src="./assets/images/news_space.png" style="width:115px;height:3px;margin-bottom:10px;"/>
                 </div>
             </div>
         </div>
         &nbsp;
         <br/>&nbsp;<br/>
     </div>
+</div>
