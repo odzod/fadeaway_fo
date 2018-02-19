@@ -28,11 +28,11 @@ import {Component} from '@angular/core';
 })
 export class Angular2Carousel  {
     //The time to show the next photo
-    private NextPhotoInterval:number = 2800;
+    public NextPhotoInterval:number = 2800;
     //Looping or not
-    private noLoopSlides:boolean = false;
+    public noLoopSlides:boolean = false;
     //Photos
-    private slides:Array<any> = [
+    public slides:Array<any> = [
         {
             "id":5
             ,"type":"INFOS"
