@@ -1,13 +1,13 @@
 <div class="mob_list_infos" *ngFor="let news of list_of_news; let i = index;">
-    <a routerLink="news/{{news.id}}" style="text-decoration:none; font-color:#000000; color:#000000;">
-        <div class="mob_infos_img"><img src="{{news.img}}" class="mob_img_infos_list"/></div>
+    <a routerLink="news/{{news.news_id}}" style="text-decoration:none; font-color:#000000; color:#000000;">
+        <div class="mob_infos_img"><img src="{{news.news_img}}" class="mob_img_infos_list"/></div>
         <div class="mob_infos_separator"></div>
         <div class="mob_infos_text">
             <div style="font-size:10px;padding-top:3px;">
-                {{news.type}}
+                {{news.news_type}}
             </div>
             <div style="font-size:12px;padding-top:6px;">
-                {{news.title}}
+                {{news.news_title}}
             </div>
         </div>
     </a>
@@ -28,20 +28,20 @@
                     <img src="./assets/images/news_space.png" style="width:220px;height:3px;margin-bottom:10px;"/>
                 </div>
                 <div *ngFor="let news of list_of_news; let i = index;">
-                    <a routerLink="news/{{news.id}}" style="text-decoration:none; font-color:#000000; color:#000000;">
+                    <a routerLink="news/{{news.news_id}}" style="text-decoration:none; font-color:#000000; color:#000000;">
                         <div style="float:left; width:20px;height:130px;"></div>
                         <div class="infos_img">
-                            <img src="{{news.img}}" class="img_infos_list"/>
+                            <img src="{{news.news_img}}" class="img_infos_list"/>
                         </div>
                         <div class="infos_separator"></div>
                         <div class="infos_text">
                             <div style="font-size:12px;padding-top:3px;color:#fb8c28;font-weight: bold;">
-                                {{news.type}}
+                                {{news.news_type}}
                             </div>
                             <div style="font-size:14px;padding-top:5px;">
-                                <strong>{{news.title}}</strong>
+                                <strong>{{news.news_title}}</strong>
                             </div>
-                            <div style="font-size:13px;;padding-top:5px;" [innerHtml]="news.contains">
+                            <div style="font-size:13px;;padding-top:5px;" [innerHtml]="news.news_title_contains">
                             </div>
                         </div>
                         <!--div style="float:left; width:10px;height:120px;"></div-->
