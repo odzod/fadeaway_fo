@@ -10,11 +10,11 @@ import 'rxjs/add/operator/retry'; // don't forget the imports
 export class ConfigService {
     constructor(private _http: HttpClient) { }
 
+    urlString = "http://api.fadeaway.fr/index.php/";
+
     httpGET(url,params){
 
-        return this._http.get("http://api.fadeaway.fr/index.php/"+url);
-
-
+        return this._http.get(this.urlString+url);
 
     }
 

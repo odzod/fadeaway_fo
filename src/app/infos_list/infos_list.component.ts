@@ -30,6 +30,4 @@ export class InfosListComponent implements OnInit{
 
     list_of_news = [];
 
-    infos_test = 'Voici la question et rumeur du jour ! Isaiah Thomas serait-il transférable avant la Trade deadline ? ...';
-
 }
