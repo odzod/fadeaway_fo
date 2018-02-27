@@ -6,7 +6,7 @@
             <!--mat-icon>close</mat-icon-->
         </button>
         </a>
-        <hr/>
+        <div style="height:1px; width:100%; background-color: #bcbcbc"></div>
         <a routerLink="" style="text-decoration:none; font-color:#000000; color:#000000;">
         <button mat-button tabindex="-1" (click)="start.close()" style="text-align:right;">
             <strong>INFOS</strong> <mat-icon style="font-size: 22px;">drag_handle</mat-icon>
@@ -15,11 +15,6 @@
         <a routerLink="" style="text-decoration:none; font-color:#000000; color:#000000;">
         <button mat-button tabindex="-1" (click)="start.close()" style="text-align:right;">
             DOSSIERS <mat-icon style="font-size: 22px;">drag_handle</mat-icon>
-        </button>
-        </a>
-        <a routerLink="" style="text-decoration:none; font-color:#000000; color:#000000;">
-        <button mat-button tabindex="-1" (click)="start.close()" style="text-align:right;">
-            TEMPS MORTS <mat-icon style="font-size: 22px;">drag_handle</mat-icon>
         </button>
         </a>
         <a routerLink="" style="text-decoration:none; font-color:#000000; color:#000000;">
@@ -37,13 +32,13 @@
             CONTACTS <mat-icon style="font-size: 22px;">drag_handle</mat-icon>
         </button>
         </a>
-        <hr/>
+        <div style="height:1px; width:100%; background-color: #bcbcbc"></div>
         <a routerLink="" style="text-decoration:none; font-color:#000000; color:#000000;">
         <button mat-button tabindex="-1" (click)="start.close()">
             <mat-icon style="font-size: 22px;">person</mat-icon> <strong>Connexion</strong>
         </button>
         </a>
-        <hr/>
+        <div style="height:1px; width:100%; background-color: #bcbcbc"></div>
         <a href="http://facebook.com/fadeaway0840" style="text-decoration:none; font-color:#000000; color:#000000;">
         <button mat-button tabindex="-1">
             <img src="./assets/images/facebook_bw.png" style="width:22px;" /> <strong>#fadeaway</strong>
@@ -60,9 +55,38 @@
                 <img src="./assets/images/logo_fadeaway_01.png" class="logotoolbar"/>
                 </a>
             </div>
+            <div style="margin-top: 30px;
+font-weight: bolder;
+font-size: 13px;
+padding-right: 20px;
+font-family: 'Droid Sans',Arial,Verdana,sans-serif;
+background-color: #333333;
+padding-left: 20px;
+padding-bottom: 6px;
+padding-top: 6px;
+color: white;
+margin-bottom: 15px;">
+                <a routerLink="" class="menu_all">ACCUEIL</a>
+                &nbsp; &nbsp; &nbsp;
+                <a routerLink="" class="menu_all">INFOS</a>
+                &nbsp; &nbsp; &nbsp;
+                <a routerLink="" class="menu_all">DOSSIERS</a>
+                &nbsp; &nbsp; &nbsp;
+                <a routerLink="" class="menu_all">TOP CLUTCH</a>
+                &nbsp; &nbsp; &nbsp;
+                <a routerLink="" class="menu_all">VIDEOS</a>
+                &nbsp; &nbsp; &nbsp;
+                <a routerLink="" class="menu_all">CONTACTS</a>
+            </div>
         </mat-toolbar>
         <div #root="dir" dir="ltr" class="app-content">
             <router-outlet></router-outlet>
+        </div>
+
+        <div style="width:100%;display:inline-block">
+            <div style="font-weight:bolder;font-size:10px;margin-left:auto;padding:2px;margin-right: auto;max-width:1080px;text-align:center; background-color:#efefef;margin-top:2px;">
+                &copy; 2018 <img src="./assets/images/logo_fadeaway_01.png" style="width:80px;margin-bottom: 2px;"/>
+            </div>
         </div>
 
     </div>

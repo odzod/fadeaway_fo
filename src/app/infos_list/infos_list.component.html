@@ -1,34 +1,35 @@
 <div class="mob_list_infos" *ngFor="let news of list_of_news; let i = index;">
     <a routerLink="news/{{news.news_id}}" style="text-decoration:none; font-color:#000000; color:#000000;">
-        <div class="mob_infos_img"><img src="{{news.news_img}}" class="mob_img_infos_list"/></div>
+        <div class="mob_infos_img"><img src="{{news.news_img}}" class="mob_infos_img"/></div>
         <div class="mob_infos_separator"></div>
         <div class="mob_infos_text">
             <div style="font-size:10px;padding-top:3px;">
                 {{news.news_type}}
             </div>
-            <div style="font-size:12px;padding-top:6px;">
+            <div style="font-size:12px;padding-top:3px;">
                 {{news.news_title}}
             </div>
         </div>
     </a>
-    <hr/>
+    <div style="height:1px; width:100%; background-color: #bcbcbc"></div>
 </div>
 
 <div class="list_infos">
     <div style="float:left;width:100%;text-align:center;padding-right:30px;">
-    <cmp-carousel></cmp-carousel>
+        <cmp-carousel></cmp-carousel>
     </div>
     <div style="display:block;">&nbsp;<br/>
         <div style="background-color: white; min-height:inherit;">
             <div style="float:left;width:60%;text-align:left;background-color: white;min-height:inherit; ">
                 <div style="padding-top:20px;padding-left:20px;">
-                    <span style="color:#fb8c28;font-weight:bold;"><strong>NOS DERNIERES</strong></span>
-                    <span style="color:#111111;font-weight:bold;"><strong> INFOS & DOSSIERS</strong></span>
+                    <span style="color:#fb8c28;font-weight:bolder;">DERNIERES</span>
+                    <span style="color:#111111;font-weight:bolder;"> INFOS & DOSSIERS</span>
                     <br/>
                     <img src="./assets/images/news_space.png" style="width:220px;height:3px;margin-bottom:10px;"/>
                 </div>
                 <div *ngFor="let news of list_of_news; let i = index;">
-                    <a routerLink="news/{{news.news_id}}" style="text-decoration:none; font-color:#000000; color:#000000;">
+                    <a routerLink="news/{{news.news_id}}"
+                       style="text-decoration:none; font-color:#000000; color:#000000;">
                         <div style="float:left; width:20px;height:130px;"></div>
                         <div class="infos_img">
                             <img src="{{news.news_img}}" class="img_infos_list"/>
@@ -38,30 +39,80 @@
                             <div style="font-size:12px;padding-top:3px;color:#fb8c28;font-weight: bold;">
                                 {{news.news_type}}
                             </div>
-                            <div style="font-size:14px;padding-top:5px;">
+                            <div class="menu_list" style="font-size:14px;padding-top:5px;">
                                 <strong>{{news.news_title}}</strong>
                             </div>
-                            <div style="font-size:13px;;padding-top:5px;" [innerHtml]="news.news_title_contains">
+                            <div class="menu_list" style="font-size:14px;;padding-top:5px;" [innerHtml]="news.news_title_contains">
                             </div>
                         </div>
                         <!--div style="float:left; width:10px;height:120px;"></div-->
                     </a>
                 </div>
             </div>
-            <div style="float:left;width:25px;"> &nbsp; </div>
+            <div style="float:left;width:25px;"> &nbsp;</div>
             <div style="float:left;width:345px; padding:20px;height:100%;min-height:inherit;text-align:left; background-color:white;">
                 <div>
-                    <span style="color:#fb8c28;font-weight:bold;"><strong>LAST 5</strong></span>
-                    <span style="color:#111111;font-weight:bold;"><strong> CLUTCH</strong></span>
-                        <br/>
-                    <img src="./assets/images/news_space.png" style="width:102px;height:3px;margin-bottom:10px;"/>
+                    <span style="color:#fb8c28;font-weight:bolder;">LAST 5</span>
+                    <span style="color:#111111;font-weight:bolder;"> CLUTCH</span>
+                    <br/>
+                    <img src="./assets/images/news_space.png" style="width:110px;height:3px;margin-bottom:10px;"/>
+                    <br/>
+                    <div style="font-size:14px;font-weight: normal;">
+                        <a routerLink="news/5" class="menu_list">
+                            <mat-icon style="height: 12px;width: 16px;font-size: 11px;color:#333333;margin-top:14px;">
+                                fiber_smart_record
+                            </mat-icon>
+                            L'info du jour : IT 's possibe ?
+                        </a><br/>
+                        <a routerLink="news/5" class="menu_list">
+                            <mat-icon style="height: 12px;width: 16px;font-size: 11px;color:#333333;margin-top:14px;">
+                                fiber_smart_record
+                            </mat-icon>
+                            Le dossier du jour : Les Toronto Raptors lmrtkemrl kerlmtk ermltk ermltk
+                        </a><br/>
+                        <a routerLink="news/5" class="menu_list">
+                            <mat-icon style="height: 12px;width: 16px;font-size: 11px;color:#333333;margin-top:14px;">
+                                fiber_smart_record
+                            </mat-icon>
+                            Le dossier du jour : Les Toronto Raptors lmrtkemrl kerlmtk ermltk ermltk
+                        </a><br/>
+                        <a routerLink="news/5" class="menu_list">
+                            <mat-icon style="height: 12px;width: 16px;font-size: 11px;color:#333333;margin-top:14px;">
+                                fiber_smart_record
+                            </mat-icon>
+                            Le dossier du jour : Les Toronto Raptors lmrtkemrl kerlmtk ermltk ermltk
+                        </a><br/>
+                    </div>
                 </div>
                 <br/>&nbsp;<br/>
                 <div>
-                    <span style="color:#fb8c28;font-weight:bold;"><strong>NEXT</strong></span>
-                    <span style="color:#111111;font-weight:bold;"><strong>  DIFFUSIONS</strong></span>
+                    <span style="color:#fb8c28;font-weight:bolder;">NEXT</span>
+                    <span style="color:#111111;font-weight:bolder;"> DIFFUSIONS</span>
                     <br/>
-                    <img src="./assets/images/news_space.png" style="width:115px;height:3px;margin-bottom:10px;"/>
+                    <img src="./assets/images/news_space.png" style="width:125px;height:3px;margin-bottom:10px;"/>
+                    <br/>
+                    <div style="font-size:14px;font-weight: normal;">
+                        <mat-icon style="height: 12px;width: 16px;font-size: 11px;color:#333333;margin-top:14px;">
+                            fiber_smart_record
+                        </mat-icon>
+                        L'info du jour : IT 's possibe ?
+                        <br/>
+                        <mat-icon style="height: 12px;width: 16px;font-size: 11px;color:#333333;margin-top:14px;">
+                            fiber_smart_record
+                        </mat-icon>
+                        Le dossier du jour : Les Toronto Raptors lmrtkemrl kerlmtk ermltk ermltk
+                        <br/>
+                        <mat-icon style="height: 12px;width: 16px;font-size: 11px;color:#333333;margin-top:14px;">
+                            fiber_smart_record
+                        </mat-icon>
+                        Le dossier du jour : Les Toronto Raptors lmrtkemrl kerlmtk ermltk ermltk
+                        <br/>
+                        <mat-icon style="height: 12px;width: 16px;font-size: 11px;color:#333333;margin-top:14px;">
+                            fiber_smart_record
+                        </mat-icon>
+                        Le dossier du jour : Les Toronto Raptors lmrtkemrl kerlmtk ermltk ermltk
+                        <br/>
+                    </div>
                 </div>
             </div>
         </div>

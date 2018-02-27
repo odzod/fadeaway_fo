@@ -7,10 +7,27 @@ body {
     top: 0;
     left: 0;
     z-index: 2;
-    width: 100%  !important;
+    width: 1080px  !important;
     height:80px;
     background: #efefef;
     border-bottom: 1px solid #333333;
+}
+
+.mat-drawer-content {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: relative;
+    z-index: 1;
+    display: block;
+    height: 100%;
+    overflow: auto;
+    background-color: #333333;
+}
+.menu_all{
+    text-decoration:none; font-color:#000000; color:white;
+}
+.menu_all:hover{
+    text-decoration:none; font-color:#000000; color: #fb8c28;
 }
 
 .mat-sidenav {
@@ -23,6 +40,14 @@ body {
     background-color: #efefef;
 }
 
+.mat-toolbar-row, .mat-toolbar-single-row {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+}
+
 .mat-button {
     width: 100%;
     position: relative;
@@ -30,13 +55,10 @@ body {
     margin: 24px 0;
 }
 
-.mat-sidenav-content{
-    background-color:#efefef;
-}
 
 .app-content {
     background-color: #efefef;
-    padding: 86px 16px 16px 16px;
+    padding: 86px 16px 16px 0px;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
@@ -44,7 +66,7 @@ body {
     font-weight: bold;
     text-align: center;
     width: 100%;
-
+    display:table;
     max-width: 1080px;
 }
 
@@ -60,6 +82,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    max-width: 1080px;
 
 }
 
@@ -75,7 +98,7 @@ h1 {
         top: 0;
         z-index: 2;
         width: 100%  !important;
-        max-width:1050px;
+        max-width:1035px;
         height:80px;
         background: #efefef;
         left: 50%;

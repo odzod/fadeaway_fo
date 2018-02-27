@@ -38,13 +38,21 @@
 
 .mob_list_infos {
     display: block;
+    padding-left:10px;
     width: 100%;
+}
+
+.menu_list{
+    text-decoration:none; font-color:#000000; color:black;
+}
+.menu_list:hover{
+    text-decoration:none; font-color:#000000; color: #fb8c28;
 }
 
 .mob_infos_img {
     /*background-color: #ffff00;*/
     float: left;
-    height: 66px;
+    height: 70px;
     width: 100px;
     margin: 0;
 }
@@ -52,13 +60,13 @@
 .mob_infos_separator {
     width: 10px;
     float: left;
-    height: 66px;
+    height: 70px;
 }
 
 .mob_infos_text {
     /*background-color: #00ff00;*/
     text-align: left;
-    height: 66px;
+    height: 70px;
     margin: 5px;
 }
 

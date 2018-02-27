@@ -122,7 +122,7 @@ dl dd a:hover {text-decoration:underline; color:#333;}
 
 
 body {
-    background-color: #efefef;
+    background-color: #404040;
     font-family: 'Droid Sans',Arial,Verdana,sans-serif;
 }
 
@@ -220,3 +220,22 @@ body {
 
 .lire_suite_car {display:inline-block; background: #5c5c5c; font-size:14px; line-height:18px; color:#fff; text-transform:uppercase; padding:12px 27px 13px 27px; margin-top:30px;}
 .lire_suite_car:hover {background:#FB9342; color:#FFFFFF;}
+
+.mat-drawer-content {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: relative;
+    z-index: 1;
+    display: block;
+    height: 100%;
+    overflow: auto;
+    background-color: #333333;
+}
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+}
