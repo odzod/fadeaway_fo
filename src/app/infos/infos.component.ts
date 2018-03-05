@@ -31,7 +31,7 @@ export class InfosComponent implements OnInit {
         });
     }
 
-    public news = {};
+    public news;
     public list_of_news = [];
 
     sendMeHome() {

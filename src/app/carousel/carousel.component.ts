@@ -92,10 +92,10 @@ export class Carousel {
 
     this.currentSlide = slide;
     let slideinfos = this.slidezs[slide.index];
-    this.parent.info_type = slideinfos.type;
-      this.parent.info_id = slideinfos.id;
-      this.parent.info_contains = slideinfos.contains;
-      this.parent.info_title = slideinfos.title;
+    this.parent.news_type = slideinfos.news_type;
+      this.parent.news_id = slideinfos.news_id;
+      this.parent.news_title_contains = slideinfos.news_title_contains;
+      this.parent.news_title = slideinfos.news_title;
     // every time you change slides, reset the timer
     this.restartTimer();
   }
