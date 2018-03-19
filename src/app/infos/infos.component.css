@@ -23,8 +23,8 @@
 
 
 .youtubeiframe{
-    width:80%;
-    height:300px;
+    width:90%;
+    height:160px;
 }
 
 @media only screen and (min-width: 993px) {
@@ -43,8 +43,8 @@
     }
 
     .youtubeiframe{
-        width:90%;
-        height:160px;
+        width:80%;
+        height:300px;
     }
 
 }
