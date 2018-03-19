@@ -30,12 +30,19 @@ body {
     text-decoration:none; font-color:#000000; color: #fb8c28;
 }
 
+.mat-sidenav-content{
+    overflow : scroll;
+    -webkit-overflow-scrolling : auto;
+}
+
 .mat-sidenav {
     min-width: 15vw;
     width: 250px;
     position: relative;
     padding-top:10px;
     bottom: 0;
+    overflow : scroll;
+    -webkit-overflow-scrolling : auto;
     margin: 24px 0;
     background-color: #efefef;
 }
@@ -60,7 +67,10 @@ body {
     background-color: #efefef;
     padding: 86px 16px 16px 0px;
     margin-left: auto;
+    overflow-scrolling: auto;
     margin-right: auto;
+    overflow : scroll;
+    -webkit-overflow-scrolling : auto;
     box-sizing: border-box;
     font-size: 12px;
     font-weight: bold;

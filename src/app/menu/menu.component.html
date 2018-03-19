@@ -1,4 +1,4 @@
-<mat-sidenav-container fullscreen>
+<mat-sidenav-container fullscreen style="overflow : scroll;-webkit-overflow-scrolling : auto;">
     <mat-sidenav #start>
         <a routerLink="" style="text-decoration:none; font-color:#000000; color:#000000;">
         <button mat-button tabindex="-1" (click)="start.close()" style="text-align:center;">
@@ -83,8 +83,8 @@ margin-bottom: 15px;">
             <router-outlet></router-outlet>
         </div>
 
-        <div style="width:100%;display:inline-block">
-            <div style="font-weight:bolder;font-size:10px;margin-left:auto;padding:2px;margin-right: auto;max-width:1080px;text-align:center; background-color:#efefef;margin-top:2px;">
+        <div style="width:100%;overflow-scrolling: auto;display:inline-block">
+            <div style="overflow-scrolling: auto;font-weight:bolder;font-size:10px;margin-left:auto;padding:2px;margin-right: auto;max-width:1080px;text-align:center; background-color:#efefef;margin-top:2px;">
                 &copy; 2018 <img src="./assets/images/logo_fadeaway_01.png" style="width:80px;margin-bottom: 2px;"/>
                 <br/>
                 <a routerLink="a-propos" style="text-decoration:none; color:#000000;">A Propos</a>
