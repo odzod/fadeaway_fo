@@ -7,27 +7,27 @@
         </button>
         </a>
         <div style="height:1px; width:100%; background-color: #bcbcbc"></div>
-        <a routerLink="news/news" style="text-decoration:none; font-color:#000000; color:#000000;">
+        <a routerLink="list/news" style="text-decoration:none; font-color:#000000; color:#000000;">
         <button mat-button tabindex="-1" (click)="start.close()" style="text-align:right;">
             <strong>INFOS</strong> <mat-icon style="font-size: 22px;">drag_handle</mat-icon>
         </button>
         </a>
-        <a routerLink="news/dossiers" style="text-decoration:none; font-color:#000000; color:#000000;">
+        <a routerLink="list/dossiers" style="text-decoration:none; font-color:#000000; color:#000000;">
         <button mat-button tabindex="-1" (click)="start.close()" style="text-align:right;">
             DOSSIERS <mat-icon style="font-size: 22px;">drag_handle</mat-icon>
         </button>
         </a>
-        <a routerLink="news/clutch" style="text-decoration:none; font-color:#000000; color:#000000;">
+        <a routerLink="list/clutch" style="text-decoration:none; font-color:#000000; color:#000000;">
         <button mat-button tabindex="-1" (click)="start.close()" style="text-align:right;">
             TOP CLUTCH <mat-icon style="font-size: 22px;">drag_handle</mat-icon>
         </button>
         </a>
-        <a routerLink="news/videos" style="text-decoration:none; font-color:#000000; color:#000000;">
+        <a routerLink="list/videos" style="text-decoration:none; font-color:#000000; color:#000000;">
         <button mat-button tabindex="-1" (click)="start.close()" style="text-align:right;">
             VIDEOS <mat-icon style="font-size: 22px;">drag_handle</mat-icon>
         </button>
         </a>
-        <a routerLink="contacts" style="text-decoration:none; font-color:#000000; color:#000000;">
+        <a routerLink="list/contacts" style="text-decoration:none; font-color:#000000; color:#000000;">
         <button mat-button tabindex="-1" (click)="start.close()" style="text-align:right;">
             CONTACTS <mat-icon style="font-size: 22px;">drag_handle</mat-icon>
         </button>
@@ -68,15 +68,15 @@ color: white;
 margin-bottom: 15px;">
                 <a routerLink="" class="menu_all">ACCUEIL</a>
                 &nbsp; &nbsp; &nbsp;
-                <a routerLink="news/news" class="menu_all">INFOS</a>
+                <a routerLink="list/news" class="menu_all">INFOS</a>
                 &nbsp; &nbsp; &nbsp;
-                <a routerLink="news/dossiers" class="menu_all">DOSSIERS</a>
+                <a routerLink="list/dossiers" class="menu_all">DOSSIERS</a>
                 &nbsp; &nbsp; &nbsp;
-                <a routerLink="news/clutch" class="menu_all">TOP CLUTCH</a>
+                <a routerLink="list/clutch" class="menu_all">TOP CLUTCH</a>
                 &nbsp; &nbsp; &nbsp;
-                <a routerLink="news/videos" class="menu_all">VIDEOS</a>
+                <a routerLink="list/videos" class="menu_all">VIDEOS</a>
                 &nbsp; &nbsp; &nbsp;
-                <a routerLink="contacts" class="menu_all">CONTACTS</a>
+                <a routerLink="list/contacts" class="menu_all">CONTACTS</a>
             </div>
         </mat-toolbar>
         <div #root="dir" dir="ltr" class="app-content">
@@ -86,6 +86,10 @@ margin-bottom: 15px;">
         <div style="width:100%;display:inline-block">
             <div style="font-weight:bolder;font-size:10px;margin-left:auto;padding:2px;margin-right: auto;max-width:1080px;text-align:center; background-color:#efefef;margin-top:2px;">
                 &copy; 2018 <img src="./assets/images/logo_fadeaway_01.png" style="width:80px;margin-bottom: 2px;"/>
+                <br/>
+                <a routerLink="a-propos" style="text-decoration:none; color:#000000;">A Propos</a>
+                &nbsp;-&nbsp;
+                <a routerLink="mentions-legales" style="text-decoration:none; color:#000000;">Mentions Légales</a>
             </div>
         </div>
 

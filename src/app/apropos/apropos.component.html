@@ -1,0 +1,86 @@
+<div class="mob_infos" style="padding-left:10px;">
+
+    <div style="display:block;text-align:left;padding-top:10px;">
+        <span style="font-size:18px; font-weight:bold;">
+            A Propos
+        </span><br/>
+        <img src="./assets/images/news_space.png" style="width:100%;height:3px;margin-bottom:10px;"/>
+        <br/>
+        <div style="text-align:justify; font-size:13px;line-height:18px;font-weight: normal;">
+            <br/>Passionné de Basket et plus particulièrement de NBA, notre équipe, via cette plateforme et ses partages, vous fait suivre l'actualité de la grande ligue<br/>
+            <br/><strong>#fadeaway</strong> vous permet d'accéder au quotidien à des news, dossiers ou autres videos.
+        </div>
+        <br/><br/>
+        <span style="font-size:16px; font-weight:bold;">
+            Notre Equipe :
+        </span><br/>
+        <img src="./assets/images/news_space.png" style="width:100%;height:3px;margin-bottom:10px;"/>
+        <br/>
+        <div style="text-align:justify;padding-left:20px; font-size:13px;line-height:18px;font-weight: normal;">
+            <br/>
+            <strong>JONATHAN D.</strong>
+            <br/>
+            <span style="color:#FB8C28;">Fonction :</span> Directeur de publication,<br/> &nbsp; Community Manager, ...
+            <br/><span style="color:#FB8C28;">Ville :</span> Bordeaux
+            <br/><br/>
+            <strong>GILLES D.</strong>
+            <br/>
+            <span style="color:#FB8C28;">Fonction :</span> Editeur de la plateforme,<br/> &nbsp; Rédaction, ...
+            <br/><span style="color:#FB8C28;">Ville :</span> Bordeaux
+            <br/><br/><br/>
+        </div>
+        <br/>
+    </div>
+</div>
+<div class="infos" style="">
+    <div style="float:left;width:65%;border: 1px solid #d0d0d0 !important;text-align:left;padding:20px;background-color:white;">
+        <br/>
+        <span style="font-size:18px; font-weight:bolder;">
+           A Propos :
+        </span>
+        <br/>
+        <img src="./assets/images/news_space.png" style="width:620px;height:3px;margin-bottom:10px;"/>
+        <div style="text-align:justify; padding-left:20px; font-size:15px;line-height:22px;font-weight: normal;">
+            <br/>Passionné de Basket et plus particulièrement de NBA, notre équipe, via cette plateforme et ses partages, vous fait suivre l'actualité de la grande ligue<br/>
+            <br/><strong>#fadeaway</strong> vous permet d'accéder au quotidien à des news, dossiers ou autres videos.
+        </div>
+        <br/><br/>
+        <span style="font-size:16px; font-weight:bolder;">
+            Notre Equipe :
+        </span><br/>
+        <img src="./assets/images/news_space.png" style="width:620px;height:3px;margin-bottom:10px;"/>
+        <br/>
+        <div style="text-align:justify; font-size:15px;line-height:22px;font-weight: normal;">
+            <br/>
+            <strong>JONATHAN D.</strong>
+            <br/>
+            <span style="color:#FB8C28;">Fonction :</span> Directeur de publication, Community Manager, ...
+            <br/><span style="color:#FB8C28;">Ville :</span> Bordeaux
+            <br/><br/>
+            <strong>GILLES D.</strong>
+            <br/>
+            <span style="color:#FB8C28;">Fonction :</span> Editeur de la plateforme, Rédaction, ...
+            <br/><span style="color:#FB8C28;">Ville :</span> Bordeaux
+            <br/><br/>
+        </div>
+        <br/><br/>
+        <br/>
+    </div>
+    <div style="float:left;width:2%;min-height:80vh;"></div>
+    <div style="float:right;border: 1px solid #d0d0d0 !important;width:33%; background-color:white;text-align:left;padding:20px;">
+        <span style="color:#fb8c28;font-weight:bolder;">DERNIERES</span>
+        <span style="color:#111111;font-weight:bolder;"> INFOS & DOSSIERS</span>
+        <br/>
+        <img src="./assets/images/news_space.png" style="width:220px;height:3px;margin-bottom:10px;"/>
+        <br/>
+        <div *ngFor="let news of list_of_news; let i = index;" style="font-size:14px;font-weight: normal;">
+            <a [routerLink]="['../', 'news', news.news_id]" class="menu_list">
+            <!--<a [routerLink]="['news/'+news.news_id]" class="menu_list">-->
+                <mat-icon style="height: 12px;width: 16px;font-size: 11px;color:#333333;margin-top:14px;">
+                    fiber_smart_record
+                </mat-icon>
+                {{news.news_title}}
+            </a><br/>
+        </div>
+    </div>
+</div>

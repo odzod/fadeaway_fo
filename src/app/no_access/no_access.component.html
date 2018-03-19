@@ -1,0 +1,51 @@
+<div class="mob_infos" style="padding-left:10px;">
+
+    <div style="display:block;text-align:left;padding-top:10px;">
+        <span style="font-size:18px; font-weight:bold;">
+            Contenu non disponible
+        </span><br/>
+        <img src="./assets/images/news_space.png" style="width:100%;height:3px;margin-bottom:10px;"/>
+        <br/>
+        <div style="text-align:justify; font-size:13px;line-height:18px;font-weight: normal;">
+            <br/>Le contenu de cette rubrique n'est pas encore disponible.
+            <br/><br/>
+            L'équipe #fadeaway s'en excuse et travail afin d'apporter la meilleur expérience possible à ses lecteurs.
+            <br/><br/>
+        </div>
+        <br/>
+    </div>
+</div>
+<div class="infos" style="">
+    <div style="float:left;width:65%;border: 1px solid #d0d0d0 !important;text-align:left;padding:20px;background-color:white;">
+        <br/>
+        <span style="font-size:18px; font-weight:bolder;">
+           Contenu non disponible
+        </span>
+        <br/>
+        <img src="./assets/images/news_space.png" style="width:620px;height:3px;margin-bottom:10px;"/>
+        <div style="text-align:justify; font-size:15px;line-height:22px;font-weight: normal;">
+            <br/>Le contenu de cette rubrique n'est pas encore disponible.
+            <br/><br/>
+            L'équipe #fadeaway s'en excuse et travail afin d'apporter la meilleur expérience possible à ses lecteurs.
+            <br/><br/></div>
+        <br/><br/>
+        <br/>
+    </div>
+    <div style="float:left;width:2%;min-height:80vh;"></div>
+    <div style="float:right;border: 1px solid #d0d0d0 !important;width:33%; background-color:white;text-align:left;padding:20px;">
+        <span style="color:#fb8c28;font-weight:bolder;">DERNIERES</span>
+        <span style="color:#111111;font-weight:bolder;"> INFOS & DOSSIERS</span>
+        <br/>
+        <img src="./assets/images/news_space.png" style="width:220px;height:3px;margin-bottom:10px;"/>
+        <br/>
+        <div *ngFor="let news of list_of_news; let i = index;" style="font-size:14px;font-weight: normal;">
+            <a [routerLink]="['../../', 'news', news.news_id]" class="menu_list">
+            <!--<a [routerLink]="['news/'+news.news_id]" class="menu_list">-->
+                <mat-icon style="height: 12px;width: 16px;font-size: 11px;color:#333333;margin-top:14px;">
+                    fiber_smart_record
+                </mat-icon>
+                {{news.news_title}}
+            </a><br/>
+        </div>
+    </div>
+</div>

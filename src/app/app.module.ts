@@ -12,7 +12,7 @@ import {PlatformModule} from '@angular/cdk/platform';
 import {PortalModule} from '@angular/cdk/portal';
 import {ScrollDispatchModule} from '@angular/cdk/scrolling';
 import {CdkStepperModule} from '@angular/cdk/stepper';
-import { HttpClientModule, HttpClient } from '@angular/common/http'
+import {HttpClientModule, HttpClient} from '@angular/common/http';
 import {CdkTableModule} from '@angular/cdk/table';
 import {
     MatAutocompleteModule,
@@ -51,12 +51,15 @@ import {
 } from '@angular/material';
 import {AppComponent} from './app.component';
 import {EntryApp, MenuComponent} from './menu/menu.component';
-import {InfosListComponent} from "./infos_list/infos_list.component";
-import {InfosComponent} from "./infos/infos.component";
-import {AppRoutingModule} from "./routes";
+import {InfosListComponent} from './infos_list/infos_list.component';
+import {InfosComponent} from './infos/infos.component';
+import {MentionsLegalesComponent} from './mentions_legales/mentions_legales.component';
+import {AppRoutingModule} from './routes';
 import {Angular2Carousel} from './carousel/Angular2Carousel.component';
 import {Carousel} from './carousel/carousel.component';
 import {Slide} from './carousel/slide.component';
+import {AProposComponent} from './apropos/apropos.component';
+import {NoAccessComponent} from "./no_access/no_access.component";
 
 /**
  * NgModule that includes all Material modules that are required to serve the app.
@@ -129,6 +132,9 @@ export class MaterialModule {
         InfosListComponent,
         InfosComponent,
         Angular2Carousel, Carousel, Slide,
+        MentionsLegalesComponent,
+        AProposComponent,
+        NoAccessComponent,
     ],
     bootstrap: [AppComponent],
     providers: []

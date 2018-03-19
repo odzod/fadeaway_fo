@@ -15,8 +15,8 @@
         <div style="text-align:justify; font-size:13px;line-height:18px;font-weight: normal;"
              [innerHtml]="news.news_title_contains"></div>
         <br/>
-        <div style="text-align:justify; font-size:13px;line-height:18px;font-weight: normal;"
-             [innerHtml]="news.news_contains"></div>
+        <div id="containsMobile" style="text-align:justify; font-size:13px;line-height:18px;font-weight: normal;"
+             ></div>
         <br/>
         <img src="./assets/images/news_space.png" style="width:100%;height:3px;margin-bottom:10px;"/>
         <br/>
@@ -29,7 +29,7 @@
 </div>
 <div class="infos" style="">
     <div style="float:left;width:65%;border: 1px solid #d0d0d0 !important;text-align:left;padding:20px;background-color:white;">
-        <span style="font-size:16px;color:#fb8c28;font-weight:bolder;">INFOS</span>
+        <span style="font-size:16px;color:#fb8c28;font-weight:bolder;">{{news.news_type}}</span>
         <br/>
         <span style="font-size:18px; font-weight:bolder;">
             {{news.news_title}}
@@ -46,8 +46,8 @@
         <div style="text-align:justify; font-size:15px;line-height:22px;font-weight: normal;"
              [innerHtml]="news.news_title_contains"></div>
         <br/>
-        <div style="text-align:justify; font-size:15px;line-height:22px;font-weight: normal;"
-             [innerHtml]="news.news_contains"></div>
+        <div id="containsNormal" style="text-align:justify; font-size:15px;line-height:22px;font-weight: normal;"
+             ></div>
         <br/><br/>
         <img src="./assets/images/news_space.png" style="width:620px;height:3px;margin-bottom:10px;"/>
         <br/>

@@ -21,12 +21,6 @@
     text-decoration:none; font-color:#000000; color: #fb8c28;
 }
 
-
-.youtubeiframe{
-    width:80%;
-    height:300px;
-}
-
 @media only screen and (min-width: 993px) {
     .mob_infos {
         display: none;
@@ -41,10 +35,4 @@
         margin-right: auto;
         width: 1050px;
     }
-
-    .youtubeiframe{
-        width:90%;
-        height:160px;
-    }
-
 }
