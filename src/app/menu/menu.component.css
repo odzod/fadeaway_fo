@@ -64,7 +64,7 @@ body {
 
 
 .app-content {
-    background-color: #efefef;
+    background-color: #FFFFFF;
     padding: 86px 16px 16px 0px;
     margin-left: auto;
     overflow-scrolling: auto;
@@ -115,6 +115,23 @@ h1 {
         margin-left: -525px;
         height:80px;
         border-bottom: 1px solid #333333;
+    }
+
+    .app-content {
+        background-color: #efefef;
+        padding: 86px 16px 16px 0px;
+        margin-left: auto;
+        overflow-scrolling: auto;
+        margin-right: auto;
+        overflow : scroll;
+        -webkit-overflow-scrolling : auto;
+        box-sizing: border-box;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+        display:table;
+        max-width: 1080px;
     }
 
 
